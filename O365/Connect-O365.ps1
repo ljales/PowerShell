@@ -9,3 +9,5 @@ $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri ht
 # Imports the created session
 Import-PSSession $Session
 
+# Connects to the Msol services
+Connect-MsolService $UserCredential
